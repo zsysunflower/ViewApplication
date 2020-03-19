@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TextActivity">
+    <!--
+        1.android:singleLine="true" 设置单行显示
+        2.android:ellipsize="start"  设置省略号位置
+        //设置跑马灯
+        android:focusable="true" 设置可以获取焦点
+        android:focusableInTouchMode="true" 设置触摸时可以获取焦点位置
+        android:marqueeRepeatLimit="marquee_forever" 设置跑马此时重复的位置
+     -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_test"
+        android:singleLine="true"
+        android:ellipsize="start"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:marqueeRepeatLimit="marquee_forever"/>
+
+</android.support.constraint.ConstraintLayout>
